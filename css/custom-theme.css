@@ -1,27 +1,23 @@
-.reveal {
-    font-family: Arial, sans-serif;
-}
-
-.reveal h1,
-.reveal h2,
-.reveal h3 {
-    color: #174a7c;
-    text-transform: none;
-}
-
-.reveal section {
+.reveal .schedule {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 28px;
     color: #222222;
 }
 
-.reveal a {
-    color: #1769aa;
+.reveal .schedule h2 {
+    text-align: center;
+    color: #174a7c;
 }
 
-.reveal img {
-    max-height: 55vh;
-    object-fit: contain;
+.reveal .schedule li {
+    margin-bottom: 12px;
 }
 
-.reveal pre {
-    font-size: 0.6em;
+.reveal .schedule .break {
+    display: block;
+    margin: 5px 0 12px 25px;
+    color: #d97706;
+    font-size: 22px;
 }
