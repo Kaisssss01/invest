@@ -1,40 +1,87 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
 
-		<title>reveal.js</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+  <title>Основные понятия инвестиций</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+  <!-- Твоя тема оформления -->
+  <link rel="stylesheet" href="css/custom-theme.css">
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+  <!-- Подсветка кода -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-markdown="slides/01-osnovnye-ponyatiya-investitsiy.md"></section>
+      <section data-markdown="slides/02-investitsii.md"></section>
+      <section data-markdown="slides/03-treyding.md"></section>
+      <section data-markdown="slides/04-fondovyy-rynok.md"></section>
+      <section data-markdown="slides/05-birzha.md"></section>
+      <section data-markdown="slides/06-broker.md"></section>
+      <section data-markdown="slides/07-tsennaya-bumaga.md"></section>
+      <section data-markdown="slides/08-investitsionnyy-portfel.md"></section>
+      <section data-markdown="slides/09-diversifikatsiya.md"></section>
+      <section data-markdown="slides/10-byki-i-medvedi.md"></section>
+      <section data-markdown="slides/11-trendy.md"></section>
+      <section data-markdown="slides/12-dokhodnost-portfelya.md"></section>
+      <section data-markdown="slides/13-opredelenie.md"></section>
+      <section data-markdown="slides/14-formula.md"></section>
+      <section data-markdown="slides/15-programma.md"></section>
+      <section data-markdown="slides/16-grafiki-investitsiy.md"></section>
+      <section data-markdown="slides/17-lineynyy-grafik.md"></section>
+      <section data-markdown="slides/18-svechnoy-grafik.md"></section>
+
+      <!-- Дополнительные слайды для требования минимум 20 -->
+      <section data-markdown="slides/19-prakticheskiy-primer.md"></section>
+      <section data-markdown="slides/20-zaklyuchenie.md"></section>
+
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+
+      // Номер текущего слайда
+      slideNumber: true,
+
+      // Переходы с клавиатуры и стрелки
+      controls: true,
+      progress: true,
+      keyboard: true,
+
+      // Плагин меню
+      menu: {
+        numbers: true,
+        titleSelector: 'h1, h2, h3',
+        useTextContentForMissingTitles: true
+      },
+
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealMenu
+      ]
+    });
+  </script>
+</body>
 </html>

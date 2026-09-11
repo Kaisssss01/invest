@@ -1,0 +1,27 @@
+.reveal {
+    font-family: Arial, sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+    color: #174a7c;
+    text-transform: none;
+}
+
+.reveal section {
+    color: #222222;
+}
+
+.reveal a {
+    color: #1769aa;
+}
+
+.reveal img {
+    max-height: 55vh;
+    object-fit: contain;
+}
+
+.reveal pre {
+    font-size: 0.6em;
+}
