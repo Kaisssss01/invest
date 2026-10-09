@@ -1,0 +1,51 @@
+/* 1. Ненавязчивый общий фон, но не белый */
+body {
+    background-color: #eeeded;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #eb6363;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.section-header {
+    background-color: #2ba727;
+    color: #453c49;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.title-header {
+    background-color: #f077ea;
+    color: #000000;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+.menu {
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.menu ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.menu .category {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

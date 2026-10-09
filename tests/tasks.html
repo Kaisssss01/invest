@@ -4,109 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invest</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            padding: 30px;
-            font-family: Arial, sans-serif;
-
-            background:
-                repeating-linear-gradient(
-                    135deg,
-                    rgba(243, 135, 135, 0.18) 0px,
-                    rgba(206, 47, 47, 0.18) 2px,
-                    transparent 2px,
-                    transparent 22px
-                ),
-                linear-gradient(
-                    135deg,
-                    #f1d28e 0%,
-                    #91e6bb 45%,
-                    #976ce7 100%
-                );
-
-            background-size: 122px 122px, cover;
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 400px;
-            margin: 30px auto;
-        }
-
-        select {
-            width: 100%;
-            padding: 12px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>My first page</h1>
+    <h1 class="title-header">My first page</h1>
 
     <div class="menu">
-        <select id="ball">
-            <option value="">Мячик</option>
-            <option value="red">Красный мячик</option>
-            <option value="blue">Синий мячик</option>
-        </select>
-
-        <select id="accounting">
-            <option value="">Бухгалтерия</option>
-            <option value="income">Доходы</option>
-            <option value="expenses">Расходы</option>
-        </select>
-
-        <select id="class-schedule">
-            <option value="">Расписание пар</option>
-            <option value="monday">Понедельник</option>
-            <option value="tuesday">Вторник</option>
-        </select>
-
-        <select id="funny-pictures">
-            <option value="">Весёлые картинки</option>
-            <option value="memes">Мемы</option>
-            <option value="animals">Животные</option>
-        </select>
-
-        <select id="diary">
-            <option value="">Дневник</option>
-            <option value="grades">Оценки</option>
-            <option value="homework">Домашнее задание</option>
-        </select>
-
-        <select id="bell-schedule">
-            <option value="">Расписание звонков</option>
-            <option value="morning">Утренние звонки</option>
-            <option value="afternoon">Дневные звонки</option>
-        </select>
-
-        <select id="derivatives">
-            <option value="">Производные</option>
-            <option value="basic">Основные правила</option>
-            <option value="examples">Примеры</option>
-        </select>
+        <ul>
+            <li>
+                <span class="category">Мячик</span>
+                <ul>
+                    <li><a href="#" data-value="red">Красный мячик</a></li>
+                    <li><a href="#" data-value="blue">Синий мячик</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Бухгалтерия</span>
+                <ul>
+                    <li><a href="#" data-value="income">Доходы</a></li>
+                    <li><a href="#" data-value="expenses">Расходы</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Расписание пар</span>
+                <ul>
+                    <li><a href="https://google.com" data-value="monday">Понедельник</a></li>
+                    <li><a href="#" data-value="tuesday">Вторник</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Весёлые картинки</span>
+                <ul>
+                    <li><a href="#" data-value="memes">Мемы</a></li>
+                    <li><a href="#" data-value="animals">Животные</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Дневник</span>
+                <ul>
+                    <li><a href="#" data-value="grades">Оценки</a></li>
+                    <li><a href="#" data-value="homework">Домашнее задание</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Расписание звонков</span>
+                <ul>
+                    <li><a href="#" data-value="morning">Утренние звонки</a></li>
+                    <li><a href="#" data-value="afternoon">Дневные звонки</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="category">Производные</span>
+                <ul>
+                    <li><a href="#" data-value="basic">Основные правила</a></li>
+                    <li><a href="#" data-value="examples">Примеры</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
-    <script>
-        console.log("Hello world!");
-    </script>
+    <div class="ball">
+        <h2 class="section-header">Мячик</h2>
+        <p>Наша Таня громко плачет:</p>
+        <b>Уронила в речку мячик.</b>
+        <br>
+        <i>— Тише, Танечка, не плачь:</i>
+        <br>
+        <b>Не утонет в речке мяч.</b>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
