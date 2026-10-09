@@ -8,71 +8,76 @@
 </head>
 
 <body>
-    <h1 class="title-header">My first page</h1>
+    <!-- Это section с заголовком h1. Класс section-card ему НЕ даём, как в задании -->
+    <section class="header-section">
+        <h1 class="title-header">My first page</h1>
+    </section>
 
-    <div class="menu">
-        <ul>
-            <li>
-                <span class="category">Мячик</span>
-                <ul>
-                    <li><a href="#" data-value="red">Красный мячик</a></li>
-                    <li><a href="#" data-value="blue">Синий мячик</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Бухгалтерия</span>
-                <ul>
-                    <li><a href="#" data-value="income">Доходы</a></li>
-                    <li><a href="#" data-value="expenses">Расходы</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Расписание пар</span>
-                <ul>
-                    <li><a href="https://google.com" data-value="monday">Понедельник</a></li>
-                    <li><a href="#" data-value="tuesday">Вторник</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Весёлые картинки</span>
-                <ul>
-                    <li><a href="#" data-value="memes">Мемы</a></li>
-                    <li><a href="#" data-value="animals">Животные</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Дневник</span>
-                <ul>
-                    <li><a href="#" data-value="grades">Оценки</a></li>
-                    <li><a href="#" data-value="homework">Домашнее задание</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Расписание звонков</span>
-                <ul>
-                    <li><a href="#" data-value="morning">Утренние звонки</a></li>
-                    <li><a href="#" data-value="afternoon">Дневные звонки</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="category">Производные</span>
-                <ul>
-                    <li><a href="#" data-value="basic">Основные правила</a></li>
-                    <li><a href="#" data-value="examples">Примеры</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <!-- Это логический блок, ему даём класс section-card -->
+    <section class="section-card menu-section">
+        <div class="menu">
+            <ul>
+                <li>
+                    <span class="category">Мячик</span>
+                    <ul>
+                        <li><a href="#" data-value="red">Красный мячик</a></li>
+                        <li><a href="#" data-value="blue">Синий мячик</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Бухгалтерия</span>
+                    <ul>
+                        <li><a href="#" data-value="income">Доходы</a></li>
+                        <li><a href="#" data-value="expenses">Расходы</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Ссылки</span>
+                    <ul>
+                        <li><a href="https://google.com" target="_blank" data-value="monday">Гугл</a></li>
+                        <li><a href="#" data-value="tuesday">Пока пусто</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Графики</span>
+                    <ul>
+                        <li><a href="tasks1.html" data-value="memes">Страница 1</a></li>
+                        <li><a href="#" data-value="animals">Животные</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Дневник</span>
+                    <ul>
+                        <li><a href="#" data-value="grades">Оценки</a></li>
+                        <li><a href="#" data-value="homework">Домашнее задание</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Расписание звонков</span>
+                    <ul>
+                        <li><a href="#" data-value="morning">Утренние звонки</a></li>
+                        <li><a href="#" data-value="afternoon">Дневные звонки</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Производные</span>
+                    <ul>
+                        <li><a href="#" data-value="basic">Основные правила</a></li>
+                        <li><a href="#" data-value="examples">Примеры</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="ball">
+
+    <section class="section-card poem-section">
         <h2 class="section-header">Мячик</h2>
         <p>Наша Таня громко плачет:</p>
-        <b>Уронила в речку мячик.</b>
-        <br>
-        <i>— Тише, Танечка, не плачь:</i>
-        <br>
-        <b>Не утонет в речке мяч.</b>
-    </div>
+        <p>Уронила в речку мячик.</p>
+        <p><i>— Тише, Танечка, не плачь:</i></p>
+        <p>Не утонет в речке мяч.</p>
+    </section>
 
     <script src="script.js"></script>
 </body>

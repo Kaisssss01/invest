@@ -3,10 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invest</title>
+    <title>Ozon Style</title>
+    <link rel="stylesheet" href="tasks.css">
 </head>
-
 <body>
-    <h1>My first page</h1>
+    <!-- Хедер с заголовком h1 — БЕЗ класса section-card -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">OZON</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Искать на Ozon">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="header-actions">
+                <button class="header-btn">Войти</button>
+                <button class="header-btn">Корзина</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Категории -->
+    <nav class="categories">
+        <div class="categories-content">
+            <a href="#" class="category-link">Электроника</a>
+            <a href="#" class="category-link">Одежда</a>
+            <a href="#" class="category-link">Дом и сад</a>
+            <a href="#" class="category-link">Детям</a>
+            <a href="#" class="category-link">Красота</a>
+            <a href="#" class="category-link">Спорт</a>
+            <a href="#" class="category-link">Книги</a>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <h2 class="section-title">Популярные товары</h2>
+        
+        <div class="products-grid">
+            <!-- Карточка товара 1 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Беспроводные наушники</h3>
+                    <div class="product-price">1 299 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Карточка товара 2 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Умные часы</h3>
+                    <div class="product-price">2 499 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Карточка товара 3 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Портативная колонка</h3>
+                    <div class="product-price">899 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Карточка товара 4 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Фитнес-браслет</h3>
+                    <div class="product-price">3 799 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Карточка товара 5 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Внешний аккумулятор</h3>
+                    <div class="product-price">599 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Карточка товара 6 -->
+            <section class="section-card">
+                <div class="product-image">
+                    <div class="heart-icon">♥</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Игровая мышь</h3>
+                    <div class="product-price">4 999 ₽</div>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

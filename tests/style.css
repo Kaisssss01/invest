@@ -1,51 +1,88 @@
-/* 1. Ненавязчивый общий фон, но не белый */
+/* Общий фон */
 body {
-    background-color: #eeeded;
+    background-color: #f0ead6; /* Ненавязчивый бежевый */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #eb6363;
+    color: #333;
     text-align: center;
     margin: 0;
     padding: 20px;
 }
 
 
-.section-header {
-    background-color: #2ba727;
-    color: #453c49;
-    padding: 10px;
-    border-radius: 6px;
-}
-
-
 .title-header {
-    background-color: #f077ea;
-    color: #000000;
-    padding: 15px;
+    background-color: #f1c40f; 
+    color: #2c3e50;           
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section-header {
+    background-color: #2c3e50; 
+    color: #f1c40f;        
+    padding: 10px 20px;
     border-radius: 6px;
+    margin-top: 0;
 }
 
 
-.menu {
-    text-align: left;
-    max-width: 400px;
-    margin: 20px auto;
+.section-card {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;      
+    border-radius: 12px;          
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 30px;      
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+    transition: all 0.3s ease; 
 }
+
+
+.section-card:hover {
+    transform: translateY(-5px);        
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: #f1c40f;                 
+}
+
 
 .menu ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
 }
-
 .menu .category {
     font-weight: bold;
     color: #2c3e50;
+    font-size: 18px;
+    display: block;
+    margin-top: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
 }
-
+.menu ul ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
 .menu a {
     text-decoration: none;
-    color: #2980b9;
+    color: #0066cc;
+    transition: color 0.2s;
+}
+.menu a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
 }
 
-.menu a:hover {
-    text-decoration: underline;
+/* Стили для стиха внутри карточки */
+.poem-section p {
+    font-style: italic;
+    line-height: 1.6;
+    margin: 8px 0;
+    font-size: 18px;
 }
