@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+
+            background:
+                repeating-linear-gradient(
+                    135deg,
+                    rgba(243, 135, 135, 0.18) 0px,
+                    rgba(206, 47, 47, 0.18) 2px,
+                    transparent 2px,
+                    transparent 22px
+                ),
+                linear-gradient(
+                    135deg,
+                    #f1d28e 0%,
+                    #91e6bb 45%,
+                    #976ce7 100%
+                );
+
+            background-size: 122px 122px, cover;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first page</h1>
+
+    <div class="menu">
+        <select id="ball">
+            <option value="">Мячик</option>
+            <option value="red">Красный мячик</option>
+            <option value="blue">Синий мячик</option>
+        </select>
+
+        <select id="accounting">
+            <option value="">Бухгалтерия</option>
+            <option value="income">Доходы</option>
+            <option value="expenses">Расходы</option>
+        </select>
+
+        <select id="class-schedule">
+            <option value="">Расписание пар</option>
+            <option value="monday">Понедельник</option>
+            <option value="tuesday">Вторник</option>
+        </select>
+
+        <select id="funny-pictures">
+            <option value="">Весёлые картинки</option>
+            <option value="memes">Мемы</option>
+            <option value="animals">Животные</option>
+        </select>
+
+        <select id="diary">
+            <option value="">Дневник</option>
+            <option value="grades">Оценки</option>
+            <option value="homework">Домашнее задание</option>
+        </select>
+
+        <select id="bell-schedule">
+            <option value="">Расписание звонков</option>
+            <option value="morning">Утренние звонки</option>
+            <option value="afternoon">Дневные звонки</option>
+        </select>
+
+        <select id="derivatives">
+            <option value="">Производные</option>
+            <option value="basic">Основные правила</option>
+            <option value="examples">Примеры</option>
+        </select>
+    </div>
+
+    <script>
+        console.log("Hello world!");
+    </script>
+</body>
+</html>
