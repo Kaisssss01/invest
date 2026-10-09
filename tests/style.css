@@ -46,7 +46,7 @@ body {
 
 .section-card:hover {
     transform: translateY(-5px);        
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 20px rgb(252, 3, 3);
     border-color: #f1c40f;                 
 }
 
@@ -79,7 +79,7 @@ body {
     text-decoration: underline;
 }
 
-/* Стили для стиха внутри карточки */
+
 .poem-section p {
     font-style: italic;
     line-height: 1.6;
